@@ -1,0 +1,299 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800);
+/* CSS Document */
+
+p{
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.left-text{		text-align:left;}
+.center-text{	text-align:center;}
+.right-text{	text-align:right;}
+
+
+a{
+	text-decoration:none;
+	color:#f39d1a;
+	font-family:'Open Sans', sans-serif;
+}
+
+.shadow{
+	text-shadow: 0px 1px 1px #FFFFFF;
+}
+
+.landing-logo{
+	color:#959595;
+	line-height:24px;
+}
+
+.left-title strong{color:#f39d1a!important;	padding-left:5px;}
+.left-title{color:#2c3945;				font-size:10px; float:left;		padding:10px;}
+.right-title{color:#2c3945;				font-size:10px; float:right;	padding:10px;}
+.right-title a{color:#2c3945!important; font-size:10px; padding-left:10px;}
+.right-title a strong{color:#f39d1a;	font-weight:normal;}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family:'Open Sans',sans-serif;
+	color:#2c3945;
+}
+
+.full-width{
+	padding-bottom:10px;
+	color:#959595;
+	line-height:18px;
+}
+
+.heading{
+	padding-bottom:10px;
+}
+
+
+
+/* List elements */
+
+.lower-latin{
+	line-height:20px;
+	list-style:lower-latin;
+	font-family:'Open Sans', sans-serif;
+	font-size:12px;
+	color:#959595;
+	padding-left:30px;
+	padding-bottom:20px;
+}
+
+
+.icon-list{
+	list-style:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:12px;
+	color:#959595;
+	padding-bottom:10px;
+}
+
+.list-heart{
+	background-image:url(../images/lists/list-heart.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-cross{
+	background-image:url(../images/lists/list-cross.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-arrow{
+	background-image:url(../images/lists/list-arrow.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-plus{
+	background-image:url(../images/lists/list-plus.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-tick{
+	background-image:url(../images/lists/list-tick.png);
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-attention{
+	background-image:url(../images/lists/list-attention.png);
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-warning{
+	background-image:url(../images/lists/list-warning.png);
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-staron{
+	background-image:url(../images/lists/list-star-on.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-staroff{
+	background-image:url(../images/lists/list-star-off.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+.list-info{
+	background-image:url(../images/lists/list-info.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding-left:25px;
+	padding-bottom:10px;
+}
+
+
+ol.number-list{
+	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	color:#959595;
+	margin-left:20px;
+	padding-bottom:20px;
+}
+
+
+.bullet-list{
+	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	color:#9595959;
+	margin-left:20px;
+	color:#959595;
+}
+
+/*Checkboxes */
+
+.setting-box{
+	display:block;
+	margin-bottom:10px;
+}
+
+.checkbox{
+	font-family: 'Open Sans', sans-serif;
+	background-image:url(../images/ui/checkbox.png);
+	background-position:0 0px;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+	padding-left:25px;
+	margin-left:10px;
+}
+
+.login-check{
+	padding-top:0px;
+	padding-bottom:3px;
+	background-position:0 0px!important;
+}
+
+.selected-checkbox{
+	background-image:url(../images/ui/checkbox-selected.png);
+}
+
+.checkbox2{
+	font-family:'Open Sans', sans-serif;
+	background-image:url(../images/ui/checkbox2.png);
+	background-position:0 0px;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+	padding-left:25px;
+	margin-left:10px;
+}
+
+.selected-checkbox2{
+	background-image:url(../images/ui/checkbox2-selected.png);
+}
+
+
+.radiobox{
+	font-family:'Open Sans', sans-serif;
+	background-image:url(../images/ui/radio.png);
+	background-position:0 0px;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+	padding-left:25px;
+	margin-left:10px;
+}
+
+.selected-radiobox{
+	background-image:url(../images/ui/radio-selected.png);	
+}
+
+.radiobox2{
+	font-family:'Open Sans', sans-serif;
+	background-image:url(../images/ui/radio2.png);
+	background-position:0 -1px;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+	padding-left:25px;
+	margin-left:10px;
+}
+
+.selected-radiobox2{
+	background-image:url(../images/ui/radio2-selected.png);	
+}
+
+.itoggle{
+	margin-top:10px;
+	background-image:url(../images/ui/switch-off.png);
+	background-repeat:no-repeat;
+	height:27px;
+	display:block;
+	padding-top:5px;
+	padding-left:75px;
+	color:#2C3945;
+	font-size:12px;
+}
+
+.itoggle-active{
+	background-image:url(../images/ui/switch-on.png);
+}
+
+.itoggle-content{
+	padding-bottom:10px;
+	color:#959595;
+	display:none;
+	line-height:18px;
+}
+
+.content-toggle{
+	margin-bottom:10px;
+}
+
+.content-toggle-deploy{
+	color:#2C3945!important;
+	font-family:'Open Sans', sans-serif;
+	font-size:13px;
+	background-image:url(../images/lists/list-plus.png);
+	background-repeat:no-repeat;
+	padding-left:25px;
+	background-position:0 0px;
+}
+
+.content-toggle-deploy-active{
+	background-image:url(../images/lists/list-cross.png);
+	background-position:0 1px;
+}
+
+.toggle-content{
+	display:none;
+	padding-top:10px;
+	color:#959595;
+	line-height:18px;
+}
+
