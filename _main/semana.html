@@ -24,6 +24,22 @@
                     
     <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.3.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.2.min.css"/>
+
+    <script type="text/javascript">
+        $.ajax({
+               type: "POST",
+               url: "http://historicofutebolmelhor.net.br/mobile/semana.php",
+               //data: ({name: theName}),
+               cache: false,
+               dataType: "text",
+               success: onSuccess
+               });
+        function onSuccess(data)
+        {
+            //alert(data)
+            $("#contentSemana").html(data);
+        }
+    </script>
                     
 </head>
 
@@ -47,8 +63,8 @@
         <p class="breadcrumb"><em class="bdiv"></em> <a href="index.html">Home</a> <em class="bdiv"></em>Semana </p>
         <div class="decoration"></div>
         
-        <div class="content-box">
-            Em breve
+        <div class="content-box" id="contentSemana">
+
         </div>
         
         <p class="footer-note shadow">Acesse <a href="#">historicofutebolmelhor.com.br</a> do computador</p>
