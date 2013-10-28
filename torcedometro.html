@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    
+    <link rel="apple-touch-icon" sizes="114x114" href="images/nav/charts@2x.png">
+        <link rel="apple-touch-startup-image" href="images/splash/charts.png" media="screen and (max-device-width: 320px)" />
+        <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/splash/charts@2x.png" />
+        
+        <title>Torcedômetro</title>
+        
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+            <link href="css/type.css" rel="stylesheet" type="text/css">
+                <link href="css/buttons.css" rel="stylesheet" type="text/css">
+                    <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)"	type="text/css" href="css/highdpi.css" />
+                    
+                    <script type="text/javascript" src="js/jquery.js"></script>
+                    <script type="text/javascript" src="js/highdpi.js"></script>
+                    <script type="text/javascript" src="js/custom.js"></script>
+                    
+                    <script type="text/javascript" charset="utf-8" src="js/jquerymobile/jquerymobile.js"></script>
+                    <link rel="stylesheet" type="text/css" href="js/jquerymobile/jquerymobile.css"/>
+                    
+                    <script type="text/javascript">
+                        $.ajax({
+                               type: "POST",
+                               url: "http://historicofutebolmelhor.net.br/mobile/torcedometro.php",
+                               //data: ({name: theName}),
+                               cache: false,
+                               dataType: "text",
+                               success: onSuccess
+                               });
+                        function onSuccess(data)
+                        {
+                            //alert(data)
+                            $("#contentTorcedometro").html(data);
+                        }
+                        </script>
+                    
+</head>
+
+<body>
+    
+    <div class="dash-page">
+		<a class="small-logo" href="index.html">Histórico Futebol Melhor</a>
+        <div class="dropdown-nav">
+            <p class="nav-deploy shadow">
+        	<em class="nav-arrow">Menu</em>
+            <span class="nav-items">
+            	<a class="shadow first-nav-item"	href="dia.html">Dia</a>
+                <a class="shadow nav-item"			href="semana.html">Semana</a>
+                <a class="shadow nav-item" 			href="mes.html">Mês</a>
+                <a class="shadow nav-item" 			href="sobre.html">Sobre</a>
+            </span>
+            </p>
+        </div>
+        <div class="clear"></div>
+        <div class="decoration"></div>
+        <p class="breadcrumb"><em class="bdiv"></em> <a href="index.html">Home</a> <em class="bdiv"></em>Torcedômetro </p>
+        <div class="decoration"></div>
+        
+        
+        <div class="content-box">
+            <div class="content-box-title">
+                <p class="left-title">Torcedômetro agora</p>
+                <p class="right-title">Fonte: futebolmelhor.com.br</p>
+                <div class="clear"></div>
+            </div>
+            <div class="visitor-stats" id="contentTorcedometro">
+                
+            </div>
+        </div>
+        
+        
+        <p class="footer-note shadow">Acesse <a href="#">historicofutebolmelhor.com.br</a> do computador</p>
+    </div>
+    
+</body>
+</html>
