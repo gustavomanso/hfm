@@ -4,27 +4,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-    
+
     <link rel="apple-touch-icon" sizes="114x114" href="images/nav/charts@2x.png">
     <link rel="apple-touch-startup-image" href="images/splash/charts.png" media="screen and (max-device-width: 320px)" />
     <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/splash/charts@2x.png" />
-        
-    <title>Dia</title>
-        
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/type.css" rel="stylesheet" type="text/css">
-    <link href="css/buttons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)"	type="text/css" href="css/highdpi.css" />
-                    
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/highdpi.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-                    
-    <script type="text/javascript" charset="utf-8" src="js/jquerymobile/jquerymobile.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/jquerymobile/jquerymobile.css"/>
 
+    <title>Dia</title>
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/type.css" rel="stylesheet" type="text/css">
+    <link href="styles/buttons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)"	type="text/css" href="styles/highdpi.css" />
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/highdpi.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+    
     <script type="text/javascript">
         $.ajax({
                type: "POST",
@@ -40,11 +35,11 @@
             $("#contentDia").html(data);
         }
     </script>
-                    
+
 </head>
 
 <body>
-    
+
     <div class="dash-page">
 		<a class="small-logo" href="index.html">Histórico Futebol Melhor</a>
         <div class="dropdown-nav">
@@ -66,9 +61,9 @@
         <div class="content-box" id="contentDia">
 
         </div>
-        
+
         <p class="footer-note shadow">Acesse <a href="#">historicofutebolmelhor.com.br</a> do computador</p>
     </div>
-    
+
 </body>
 </html>
